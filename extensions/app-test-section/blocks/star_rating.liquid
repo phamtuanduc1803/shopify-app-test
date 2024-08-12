@@ -1,0 +1,25 @@
+{% comment %} {% assign avg_rating = block.settings.product.metafields.demo.avg_rating.value | round %}
+<span style="color:{{ block.settings.colour }}">
+  {% render 'stars', rating: avg_rating %}
+</span>
+{% if avg_rating >= 4 %}
+  <br>
+  <img src="{{ "thumbs-up.png" | asset_img_url: '15x' }}" height="15" width="15" loading="lazy">
+  {{ 'ratings.home.recommendationText' | t }}
+{% endif %} {% endcomment %}
+
+<div class="test {{ block.settings.position }}"></div>
+
+{% schema %}
+{
+  "name": "Star Rating",
+  "target": "section",
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" },
+    { "type": "select", "id": "position", "label": "Position", 
+      "options": [{ "value": "position-1", "label": "Position 1"}, { "value": "position-2", "label": "Position 2"},{ "value": "position-3", "label": "Position 3"}, { "value": "position-4", "label": "Position 4"},{ "value": "position-5", "label": "Position 5"},{ "value": "position-6", "label": "Position 6"}], "default": "position-1" }
+  ]
+}
+{% endschema %}
+
