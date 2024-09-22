@@ -3,7 +3,7 @@
 client_id = "7b0f573fdaad67c6732a0565d612dc35"
 name = "app-test-section"
 handle = "app-test-section"
-application_url = "https://lips-galleries-incorporated-output.trycloudflare.com"
+application_url = "https://dry-fixtures-diy-vs.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://lips-galleries-incorporated-output.trycloudflare.com/auth/callback",
-  "https://lips-galleries-incorporated-output.trycloudflare.com/auth/shopify/callback",
-  "https://lips-galleries-incorporated-output.trycloudflare.com/api/auth/callback"
+  "https://dry-fixtures-diy-vs.trycloudflare.com/auth/callback",
+  "https://dry-fixtures-diy-vs.trycloudflare.com/auth/shopify/callback",
+  "https://dry-fixtures-diy-vs.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
